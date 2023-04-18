@@ -6,6 +6,9 @@ import avatar from "../assets/avatar.jpg";
 import avatar2 from "../assets/avatar2.jpg";
 import avatar3 from "../assets/avatar3.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+
 function Testimonials() {
   return (
     <section id="testimonials" className={Classes.testimonials}>
@@ -13,6 +16,7 @@ function Testimonials() {
 
       <div className={Classes.boxContainer}>
         <div className={Classes.testimonialBox}>
+          <FontAwesomeIcon icon={faQuoteLeft} className={Classes.Icon} />
           <p>
             Samim travel has such a user-friendly website. Easy to navigate,
             search and fiddle with dates instead of having to call up. Once
@@ -29,6 +33,8 @@ function Testimonials() {
         </div>
 
         <div className={Classes.testimonialBox}>
+          <FontAwesomeIcon icon={faQuoteLeft} className={Classes.Icon} />
+
           <p>
             Great communication. This was a rushed booking and she was very
             helpful/prompt with calls/replies to ensure we could have preferred
@@ -45,6 +51,7 @@ function Testimonials() {
         </div>
 
         <div className={Classes.testimonialBox}>
+          <FontAwesomeIcon icon={faQuoteLeft} className={Classes.Icon} />
           <p>
             I must say the service we received from this company was amazing and
             would recommend them to anyone to trust and use them the rewards you

@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   padding: 0.6rem 2rem;
-  z-index: 999;
+  z-index: 1;
   box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.335);
 }
 
@@ -23,7 +23,7 @@
 }
 
 .active {
-  color: rgb(243, 111, 9);
+  color: rgb(243, 111, 9) !important;
 }
 
 .Navbar ul {
@@ -42,9 +42,10 @@
 
 .Navbar ul li a {
   text-decoration: none;
+  color: black;
 }
 
-.Navbar ul li:hover {
+.Navbar ul li a:hover {
   color: rgb(243, 111, 9);
 }
 

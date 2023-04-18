@@ -105,3 +105,41 @@
   background-color: transparent;
   color: rgb(243, 111, 9);
 }
+
+/* modal */
+.modalContainer {
+  position: absolute;
+  width: 40%;
+  top: 2%;
+  left: 30%;
+  padding: 1rem;
+  background-color: rgb(243, 111, 9);
+  border-radius: 20px;
+  box-shadow: rgb(0, 0, 0, 0.2) 0px 10px 10px 0px;
+  z-index: 999;
+  text-align: center;
+  position: fixed;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.open {
+  transform: translateY(0px);
+}
+
+.modalContainer h5 {
+  font-size: 1.2rem;
+}
+.modalContainer button {
+  padding: 0.6rem 4rem;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
