@@ -12,6 +12,7 @@
 .heroimage img {
   width: 100%;
   filter: brightness(60%);
+  object-fit: cover;
 }
 
 .content {
