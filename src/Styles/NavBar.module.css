@@ -61,3 +61,65 @@
   text-transform: uppercase;
   box-shadow: 2px 2px 2px 1px rgba(110, 48, 0, 0.16);
 }
+
+.hamburger {
+  display: none;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+/* responsive section */
+
+@media screen and (max-width: 450px) {
+  .Navbar {
+    padding: 0.6rem 0rem;
+  }
+
+  .brand {
+    width: 100vw;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .Navbar ul {
+    flex-direction: column;
+    position: fixed;
+    top: 7%;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .open {
+    opacity: 1 !important;
+    display: flex !important;
+  }
+
+  .NavBtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Navbar ul {
+    top: 6%;
+  }
+
+  .NavLogo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}

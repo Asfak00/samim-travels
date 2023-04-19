@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Classes from "../Styles/NavBar.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+
 function NavBar() {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <>
       <nav className={Classes.Navbar}>
@@ -10,9 +15,25 @@ function NavBar() {
           <h1 className={Classes.NavLogo}>
             Samim <span>Travels</span>
           </h1>
+
+          <div className={Classes.hamburger}>
+            {toggle ? (
+              <FontAwesomeIcon
+                icon={faClose}
+                className={Classes.menuIcon}
+                onClick={() => setToggle(false)}
+              />
+            ) : (
+              <FontAwesomeIcon
+                className={Classes.menuIcon}
+                icon={faBars}
+                onClick={() => setToggle(true)}
+              />
+            )}
+          </div>
         </div>
 
-        <ul>
+        <ul className={toggle ? Classes.open : ""}>
           <li>
             <a href="#hero" className={Classes.active}>
               home

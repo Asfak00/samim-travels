@@ -10,7 +10,7 @@ import Recommendation from "./Components/Recommendation";
 function App() {
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <NavBar />
       <Hero />
       <Service />

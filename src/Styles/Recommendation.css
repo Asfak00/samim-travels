@@ -109,3 +109,20 @@
 .details p {
   font-size: 0.8rem;
 }
+
+/* responsive section */
+
+@media screen and (max-width: 450px) {
+  .recommendation {
+    padding: 2rem 1rem;
+  }
+
+  .CategoryBar ul {
+    gap: 0.5rem;
+  }
+
+  .recommendationBox {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}

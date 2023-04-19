@@ -57,3 +57,16 @@
   font-size: 0.9rem;
   color: rgb(84, 84, 84);
 }
+
+/* responsive section */
+
+@media screen and (max-width: 450px) {
+  .testimonials {
+    padding: 0 1rem;
+  }
+
+  .boxContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
