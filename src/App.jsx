@@ -6,10 +6,11 @@ import Testimonials from "./Components/Testimonials";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Recommendation from "./Components/Recommendation";
+import Classes from "./Styles/Footer.module.css";
 
 function App() {
   return (
-    <>
+    <div className={Classes.app}>
       <ScrollToTop />
       <NavBar />
       <Hero />
@@ -17,7 +18,7 @@ function App() {
       <Recommendation />
       <Testimonials />
       <Footer />
-    </>
+    </div>
   );
 }
 

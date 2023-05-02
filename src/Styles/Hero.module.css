@@ -186,6 +186,11 @@
   .title p {
     padding: 0 0vw;
   }
+
+  .modalContainer {
+    width: 80%;
+    left: 9%;
+  }
 }
 
 @media screen and (max-width: 320px) {

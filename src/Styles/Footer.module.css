@@ -1,3 +1,7 @@
+.app {
+  max-width: 1200px;
+}
+
 .footer {
   width: 100%;
   padding: 1.5rem 4rem;
